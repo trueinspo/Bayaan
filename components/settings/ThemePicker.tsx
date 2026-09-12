@@ -33,7 +33,7 @@ export const ThemePicker: React.FC = () => {
       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
       setThemeMode(mode);
       const effectiveTheme = mode === 'dark' ? 'dark' : 'light';
-      Appearance.setColorScheme(effectiveTheme)
+      Appearance.setColorScheme(effectiveTheme);
     },
     [themeMode, setThemeMode],
   );
